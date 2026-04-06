@@ -37,6 +37,7 @@ import com.winlator.fexcore.FEXCorePresetManager;
 import com.winlator.sysvshm.SysVSHMConnectionHandler;
 import com.winlator.sysvshm.SysVSHMRequestHandler;
 import com.winlator.sysvshm.SysVSharedMemory;
+import com.winlator.winhandler.WinHandler;
 import com.winlator.xconnector.UnixSocketConfig;
 import com.winlator.xconnector.XConnectorEpoll;
 import com.winlator.xenvironment.ImageFs;

@@ -572,6 +572,9 @@ public class WinHandler {
     }
 
     private void startRumblePoller() {
+        // poller skips case where controller is null and we
+        // do NOT vibrate phone as of now to prevent issues with docked users.
+        // TODO: add phone vibration option in upcoming ux when no controller device connected
         rumblePollerThread = new Thread(() -> {
             while (running) {
                 // --- MODIFIED: Get the current profile state on EVERY loop iteration ---
